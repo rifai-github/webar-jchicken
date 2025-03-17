@@ -1,0 +1,133 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4735670228566580494
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1737600578678274076}
+  - component: {fileID: 2867792344786758379}
+  - component: {fileID: 8170067831261023759}
+  - component: {fileID: 2103021746426380382}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1737600578678274076
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4735670228566580494}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2867792344786758379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4735670228566580494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f813e7d35dc187e4aad46c14a2843fc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 400
+  image: {fileID: 2103021746426380382}
+  items:
+  - Chance: 5
+    Sprite: {fileID: 21300000, guid: 4423bea258a2b5a4ca50e8213f5560aa, type: 3}
+    Size: {x: 200, y: 200}
+    Point: 30
+  - Chance: 10
+    Sprite: {fileID: 21300000, guid: b63c9f3aa6a6348458ec8d2c7927a24a, type: 3}
+    Size: {x: 100, y: 100}
+    Point: 20
+  - Chance: 10
+    Sprite: {fileID: 21300000, guid: 749cb0df4ebef5343990b2cc99cb142c, type: 3}
+    Size: {x: 100, y: 100}
+    Point: 20
+  - Chance: 10
+    Sprite: {fileID: 21300000, guid: 36b0882905ad31d4a842d8c365080737, type: 3}
+    Size: {x: 100, y: 100}
+    Point: 20
+  - Chance: 10
+    Sprite: {fileID: 21300000, guid: ac311f0d3484bbc49a4d2ea60f2a4aca, type: 3}
+    Size: {x: 100, y: 100}
+    Point: 20
+  - Chance: 10
+    Sprite: {fileID: 21300000, guid: a311f8b73eb06fe4bab877f95f2db98f, type: 3}
+    Size: {x: 100, y: 100}
+    Point: 10
+  - Chance: 10
+    Sprite: {fileID: 21300000, guid: eaed4a317215be844b7f65674c5a2dcd, type: 3}
+    Size: {x: 100, y: 100}
+    Point: 10
+  - Chance: 10
+    Sprite: {fileID: 21300000, guid: 66e904709de659b4da75112f370b02f6, type: 3}
+    Size: {x: 100, y: 100}
+    Point: 10
+  - Chance: 10
+    Sprite: {fileID: 21300000, guid: 956f750834fc02b40a7a27fa06816bca, type: 3}
+    Size: {x: 100, y: 100}
+    Point: 10
+  - Chance: 20
+    Sprite: {fileID: 21300000, guid: 32fa1bd1c6273644e963b922847319a2, type: 3}
+    Size: {x: 100, y: 100}
+    Point: -50
+--- !u!222 &8170067831261023759
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4735670228566580494}
+  m_CullTransparentMesh: 1
+--- !u!114 &2103021746426380382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4735670228566580494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: b63c9f3aa6a6348458ec8d2c7927a24a, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1

@@ -1,15 +1,36 @@
 using UnityEngine;
 
-public class GameManagers : MonoBehaviour
+namespace Kha2Dev.Example.CatchChiken
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Awake()
+    using Helpers;
+    public class GameManagers : MonoBehaviour
     {
-    }
+        public static GameManagers Instance { get; private set; }
+        
+        [SerializeField] private GamePlayManager gamePlayManager;
 
-    // Update is called once per frame
-    void Update()
-    {
+        public bool GameStarted { get; private set; }
 
+        private void Awake()
+        {
+            if (Instance == null)
+            {
+                Instance = this;
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
+        }
+
+        private void Start()
+        {
+            gamePlayManager.StartGame();
+        } 
+
+        public void SetGameStart(bool gameStarted)
+        {
+            GameStarted = gameStarted;
+        }
     }
 }
